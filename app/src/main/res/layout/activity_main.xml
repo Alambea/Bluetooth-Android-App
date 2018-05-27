@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ana.bluetoothejemplo.MainActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btnBuscar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:onClick="btnBuscar"
+                            android:text="Buscar" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btnConectar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/btnBuscar"
+                            android:layout_weight="1"
+                            android:text="Conectar" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                                <EditText
+                                    android:id="@+id/editText"
+                                    android:layout_width="250dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/lvDispositivos"
+                                    android:layout_weight="1"
+                                    android:hint="Introducir texto" />
+
+                                <Button
+                                    android:id="@+id/btnEnviar"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/lvDispositivos"
+                                    android:layout_toRightOf="@+id/editText"
+                                    android:layout_weight="1"
+                                    android:text="Enviar" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/tvSelec"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+
+                        <ListView
+                            android:id="@+id/lvDispositivos"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/btnConectar"
+                            android:layout_marginTop="15dp"
+                            android:layout_weight="1" />
+
+                </LinearLayout>
+
+        </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>
